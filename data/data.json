@@ -1,0 +1,538 @@
+{
+  "site": {
+    "title": "Kilistra",
+    "subtitle": "Gökyurt Köyü Antik Kenti",
+    "tagline": "2000 Yıllık Tarihin İzinde",
+    "description": "Konya'nın Meram ilçesine bağlı Gökyurt Köyü'nde saklanan Kilistra Antik Kenti; Roma, Bizans ve Erken Hristiyanlık dönemlerinden kalma kaya kiliseleri, manastırlar ve peribacalarıyla zamanın ötesine açılan bir kapıdır.",
+    "logo": "assets/images/logo.png",
+    "favicon": "assets/icons/favicon.ico",
+    "social": {
+      "facebook": "",
+      "instagram": "",
+      "twitter": ""
+    }
+  },
+
+  "nav": {
+    "links": [
+      { "label": "Ana Sayfa", "href": "index.html" },
+      { "label": "Tarih", "href": "tarih.html" },
+      { "label": "Keşfet", "href": "kesfet.html" },
+      { "label": "Galeri", "href": "galeri.html" },
+      { "label": "Pratik Bilgiler", "href": "pratik.html" },
+      { "label": "İletişim", "href": "iletisim.html" }
+    ]
+  },
+
+  "hero": {
+    "image": "assets/images/hero.jpg",
+    "image_alt": "Kilistra Antik Kenti gün batımı panoraması",
+    "video": null,
+    "title": "Kilistra",
+    "subtitle": "Zaman Yenilmez, Taş Konuşur",
+    "description": "MÖ 3. yüzyıldan bu yana ayakta duran Anadolu'nun gizli hazinesi",
+    "cta_primary": { "label": "Keşfet", "href": "kesfet.html" },
+    "cta_secondary": { "label": "Tarihi Öğren", "href": "tarih.html" }
+  },
+
+  "intro": {
+    "title": "Kilistra Nedir?",
+    "text": "Konya'nın 45 km güneybatısında, Meram ilçesinin Gökyurt Köyü içinde saklanan Kilistra Antik Kenti; Roma askeri kolonisinden Erken Hristiyanlığın önemli bir merkezine dönüşmüş, Kapadokya'yı andıran kaya oyuğu mimarisiyle eşsiz bir açık hava müzesidir. Aziz Pavlus'un ayak bastığı bu kutsal topraklar, Anadolu uygarlık katmanlarının yaşayan tanıklarıdır.",
+    "image": "assets/images/intro.jpg",
+    "image_alt": "Kilistra kaya kiliseleri ve vadisi",
+    "highlights": [
+      { "icon": "calendar", "value": "MÖ 3. yy", "label": "İlk Yerleşim" },
+      { "icon": "church", "value": "40+", "label": "Kaya Yapısı" },
+      { "icon": "map-pin", "value": "45 km", "label": "Konya'ya Uzaklık" },
+      { "icon": "layers", "value": "4", "label": "Uygarlık Katmanı" }
+    ]
+  },
+
+  "featured_places": {
+    "title": "Öne Çıkan Mekanlar",
+    "subtitle": "Kilistra'nın En Etkileyici Noktaları",
+    "items": [
+      {
+        "id": "sandikkaya",
+        "name": "Sandıkkaya Kilisesi",
+        "short_desc": "Kayaya oyulmuş nadir haç planlı yapı",
+        "image": "assets/images/places/sandikkaya.jpg",
+        "image_alt": "Sandıkkaya Kilisesi içi ve haç planı",
+        "href": "kesfet.html#sandikkaya"
+      },
+      {
+        "id": "sumbul",
+        "name": "Sümbül Kilisesi",
+        "short_desc": "Aziz Pavlus Kilisesi olarak da bilinen inanç merkezi",
+        "image": "assets/images/places/sumbul.jpg",
+        "image_alt": "Sümbül Kilisesi dış cephesi",
+        "href": "kesfet.html#sumbul"
+      },
+      {
+        "id": "kral-yolu",
+        "name": "Kral Yolu (Via Sebaste)",
+        "short_desc": "Antik dönemden kalan taş döşemeli Roma yolu",
+        "image": "assets/images/places/kral-yolu.jpg",
+        "image_alt": "Via Sebaste antik Roma yolu taş döşemeleri",
+        "href": "kesfet.html#kral-yolu"
+      },
+      {
+        "id": "sarnic",
+        "name": "Roma Sarnıçları",
+        "short_desc": "Mühendisliğin şaheseri, antik su depolama sistemleri",
+        "image": "assets/images/places/sarnic.jpg",
+        "image_alt": "Roma dönemine ait sarnıç",
+        "href": "kesfet.html#sarnic"
+      }
+    ]
+  },
+
+  "stats": [
+    { "value": "2300+", "label": "Yıllık Tarih" },
+    { "value": "40+", "label": "Kaya Yapısı" },
+    { "value": "6", "label": "Kilise & Şapel" },
+    { "value": "1", "label": "Antik Yol" }
+  ],
+
+  "history": {
+    "page_title": "Tarih & Arkeoloji",
+    "page_subtitle": "Tunç Çağı'ndan Osmanlı'ya Uzanan Katmanlar",
+    "hero_image": "assets/images/tarih-hero.jpg",
+    "hero_image_alt": "Kilistra arkeolojik kazı ve tarihi yapılar",
+    "intro": "Kilistra, Anadolu'nun en katmanlı yerleşim bölgelerinden biridir. Geç Tunç Çağı'nda başlayan iskân öyküsü, Helenistik, Roma, Erken Hristiyanlık ve Bizans dönemlerini kapsayarak bugünkü Gökyurt Köyü'ne dek uzanır.",
+
+    "timeline": [
+      {
+        "id": "tunc",
+        "period": "Geç Tunç Çağı",
+        "years": "MÖ 1200 – 800",
+        "title": "İlk İskânın İzleri",
+        "text": "Bölgede yapılan yüzey araştırmalarında bulunan seramik parçaları, Geç Tunç Çağı'na tarihlenmektedir. Bu bulgular Kilistra'nın en erken yerleşimlerinden birine ev sahipliği yaptığını ortaya koymaktadır.",
+        "image": "assets/images/tarih/tunc-cagi.jpg",
+        "image_alt": "Geç Tunç Çağı seramik buluntuları"
+      },
+      {
+        "id": "helenistik",
+        "period": "Helenistik Dönem",
+        "years": "MÖ 3. – 1. yüzyıl",
+        "title": "Şehrin Kuruluşu",
+        "text": "MÖ 3. yüzyılda kalıcı bir yerleşim merkezi olarak kurulan Kilistra, Helenistik dönemde stratejik konumunu pekiştirmiştir. Kaya oyuğu mimarisi bu dönemde şekillenmeye başlamıştır.",
+        "image": "assets/images/tarih/helenistik.jpg",
+        "image_alt": "Helenistik dönem kaya oyuğu yapıları"
+      },
+      {
+        "id": "roma",
+        "period": "Roma Dönemi",
+        "years": "MÖ 25 – MS 395",
+        "title": "Roma Askeri Kolonisi",
+        "text": "İmparator Augustus, Kilistra'yı günümüz Türkiye'sinin güney bölgelerinde kurulan beş Roma askeri kolonisinden biri olarak tesis etmiştir. Via Sebaste (Kral Yolu) üzerindeki konumu kenti ticaret ve askeriye açısından kritik kılmıştır.",
+        "image": "assets/images/tarih/roma.jpg",
+        "image_alt": "Roma dönemine ait sütun kalıntıları ve Via Sebaste"
+      },
+      {
+        "id": "hristiyanlık",
+        "period": "Erken Hristiyanlık",
+        "years": "MS 45 – 6. yüzyıl",
+        "title": "Aziz Pavlus'un Yolculuğu",
+        "text": "MS 45-50 yılları arasında Aziz Pavlus ve Barnabas, birinci misyoner yolculuklarında Kilistra'yı ziyaret etmiştir. İlk kadın azize Azize Tekla (Thecla) burada kutsal statüsüne kavuşmuştur. Şehir, Erken Hristiyanlığın Anadolu'daki önemli merkezlerinden biri hâline gelmiştir.",
+        "image": "assets/images/tarih/hristiyanlık.jpg",
+        "image_alt": "Erken Hristiyanlık dönemine ait kaya kilisesi fresk kalıntıları"
+      },
+      {
+        "id": "bizans",
+        "period": "Bizans Dönemi",
+        "years": "MS 6. – 13. yüzyıl",
+        "title": "Altın Çağ ve Kaya Mimarisi",
+        "text": "Kilistra, Bizans döneminde en parlak çağını yaşamıştır. Piskoposluk kilisesi, şapeller, manastırlar ve yaşam alanları tüf kayalara oyularak inşa edilmiştir. 6. yüzyıla ait büyük Piskoposluk Kilisesi'nde altın yaldızlı mozaikler ve 40'tan fazla Hristiyan mezarı bulunmuştur.",
+        "image": "assets/images/tarih/bizans.jpg",
+        "image_alt": "Bizans dönemine ait kaya kilisesi ve mozaik kalıntıları"
+      },
+      {
+        "id": "selcuklu",
+        "period": "Selçuklu & Osmanlı",
+        "years": "13. yüzyıl – Günümüz",
+        "title": "Gökyurt Köyü",
+        "text": "Selçuklu fethi sonrasında şehir yavaş yavaş terk edilmiş, ancak yerleşim kesintisiz sürmüştür. Bugün Gökyurt Köyü, antik kentin üzerinde kurulu olup köy sakinleri tarihî dokununun doğal koruyucuları hâline gelmiştir.",
+        "image": "assets/images/tarih/gokyurt.jpg",
+        "image_alt": "Günümüz Gökyurt Köyü ve tarihi yapılar"
+      }
+    ],
+
+    "paul_section": {
+      "title": "Aziz Pavlus ve Kilistra",
+      "subtitle": "İnanç Turizminin Kalbindeki Kent",
+      "text": "MS 45-50 yılları arasında Aziz Pavlus ve yol arkadaşı Barnabas, Hristiyanlığı yaymak amacıyla çıktıkları Birinci Misyoner Yolculuğu'nda Kilistra'ya uğramıştır. Elçilerin İşleri 14. bölümde adı geçen kent, bugün hac turizminin önemli bir durağıdır. Azize Tekla'nın kutsal statüsünü burada kazandığı inanılmaktadır.",
+      "image": "assets/images/tarih/pavlus.jpg",
+      "image_alt": "Aziz Pavlus'un misyoner yolculuğu güzergâhı"
+    },
+
+    "findings": {
+      "title": "Arkeolojik Bulgular",
+      "items": [
+        {
+          "title": "Altın Yaldızlı Mozaikler",
+          "text": "Piskoposluk Kilisesi'nde MS 6. yüzyıla ait altın yaldızlı mozaik parçaları bulunmuştur.",
+          "image": "assets/images/tarih/mozaik.jpg",
+          "image_alt": "Bizans mozaik kalıntıları"
+        },
+        {
+          "title": "Hristiyan Mezarlığı",
+          "text": "Kazılarda 40'tan fazla Erken Hristiyanlık dönemine ait mezar gün yüzüne çıkarılmıştır.",
+          "image": "assets/images/tarih/mezar.jpg",
+          "image_alt": "Erken Hristiyanlık dönemi mezar kazısı"
+        },
+        {
+          "title": "Seramik Atölyeleri",
+          "text": "Roma dönemine ait seramik üretim atölyelerinin kalıntıları bölgenin ticari önemini gözler önüne sermektedir.",
+          "image": "assets/images/tarih/seramik.jpg",
+          "image_alt": "Roma dönemi seramik atölyesi kalıntıları"
+        }
+      ]
+    }
+  },
+
+  "places": {
+    "page_title": "Keşfet",
+    "page_subtitle": "Kilistra'nın Gizemli Köşeleri",
+    "hero_image": "assets/images/kesfet-hero.jpg",
+    "hero_image_alt": "Kilistra panoramik manzarası",
+    "map": {
+      "center_lat": 37.6482,
+      "center_lng": 32.3869,
+      "zoom": 15
+    },
+    "items": [
+      {
+        "id": "sandikkaya",
+        "name": "Sandıkkaya Kilisesi",
+        "category": "Dini Yapı",
+        "period": "Bizans Dönemi (MS 6-10. yy)",
+        "description": "Kilistra'nın en dikkat çekici yapılarından olan Sandıkkaya Kilisesi, tüf kayaya oyulmuş nadir haç planlı mimarisiyle öne çıkar. İç mekânda fresk kalıntıları ve sütun başlıkları görülmektedir. Adını çevresindeki kaya bloklarının sandık görünümünden almaktadır.",
+        "image": "assets/images/places/sandikkaya.jpg",
+        "image_alt": "Sandıkkaya Kilisesi haç planlı iç mekânı",
+        "gallery": [
+          "assets/images/places/sandikkaya-1.jpg",
+          "assets/images/places/sandikkaya-2.jpg"
+        ],
+        "lat": 37.6489,
+        "lng": 32.3872,
+        "tips": "Sabah erken saatlerde ziyaret edin, ışık içeriye daha iyi giriyor."
+      },
+      {
+        "id": "sumbul",
+        "name": "Sümbül Kilisesi",
+        "category": "Dini Yapı",
+        "period": "Erken Hristiyanlık – Bizans (MS 5-12. yy)",
+        "description": "Aziz Pavlus Kilisesi olarak da bilinen Sümbül Kilisesi, Kilistra'nın inanç turizmindeki en önemli yapısıdır. Kayaya oyulmuş mekânında Aziz Pavlus'un ziyaretine atfedilen bölümler bulunmaktadır. Çevresinde manastır hücreleri ve küçük şapeller yer almaktadır.",
+        "image": "assets/images/places/sumbul.jpg",
+        "image_alt": "Sümbül Kilisesi dış görünümü ve çevresi",
+        "gallery": [
+          "assets/images/places/sumbul-1.jpg",
+          "assets/images/places/sumbul-2.jpg"
+        ],
+        "lat": 37.6478,
+        "lng": 32.3861,
+        "tips": "Kilise girişindeki sümbül çiçeklerinden adını almaktadır; ilkbaharda çiçek açarken muhteşem görünür."
+      },
+      {
+        "id": "kral-yolu",
+        "name": "Kral Yolu (Via Sebaste)",
+        "category": "Antik Yol",
+        "period": "Roma Dönemi (MÖ 6 – MS 300)",
+        "description": "İmparator Augustus döneminde inşa edilen Via Sebaste, Roma İmparatorluğu'nun Anadolu'daki en önemli stratejik yollarından biriydi. Kilistra bu yol üzerindeki kritik bir duraktı. Taş döşemeli bölümler bugün hâlâ görülebilmektedir.",
+        "image": "assets/images/places/kral-yolu.jpg",
+        "image_alt": "Via Sebaste antik Roma yolu taş döşemeleri",
+        "gallery": [
+          "assets/images/places/kral-yolu-1.jpg"
+        ],
+        "lat": 37.6475,
+        "lng": 32.3880,
+        "tips": "Yol boyunca yürüyüş yaparak antik dönemin atmosferini hissedebilirsiniz."
+      },
+      {
+        "id": "gozetleme",
+        "name": "Gözetleme Kulesi",
+        "category": "Savunma Yapısı",
+        "period": "Roma – Bizans",
+        "description": "Kilistra'nın çevresindeki tepelere yerleştirilmiş gözetleme kuleleri, kentin savunma stratejisini gözler önüne serer. En iyi korunan kule, vadiye hâkim konumuyla hem tarihî hem de panoramik açıdan etkileyicidir.",
+        "image": "assets/images/places/gozetleme.jpg",
+        "image_alt": "Kilistra gözetleme kulesi kalıntısı",
+        "gallery": [
+          "assets/images/places/gozetleme-1.jpg"
+        ],
+        "lat": 37.6494,
+        "lng": 32.3858,
+        "tips": "Kulenin tepesinden tüm vadi manzarasını görebilirsiniz."
+      },
+      {
+        "id": "sarnic",
+        "name": "Roma Sarnıçları",
+        "category": "Altyapı",
+        "period": "Roma Dönemi",
+        "description": "Kilistra'nın su ihtiyacını karşılamak için inşa edilen büyük sarnıçlar, Roma mühendisliğinin en çarpıcı örneklerinden biridir. Kayaya oyulmuş ve harçla sıvanmış bu yapılar yüzyıllar boyunca işlev görmüştür.",
+        "image": "assets/images/places/sarnic.jpg",
+        "image_alt": "Roma dönemi sarnıç iç görünümü",
+        "gallery": [
+          "assets/images/places/sarnic-1.jpg"
+        ],
+        "lat": 37.6481,
+        "lng": 32.3875,
+        "tips": "Sarnıç içi oldukça serin, yaz aylarında güzel bir mola noktası."
+      },
+      {
+        "id": "piskoposluk",
+        "name": "Piskoposluk Kilisesi Kalıntıları",
+        "category": "Dini Yapı",
+        "period": "Bizans (MS 6. yy)",
+        "description": "6. yüzyılda inşa edilen büyük Piskoposluk Kilisesi, Kilistra'nın Bizans dönemindeki dini merkezi olmuştur. Kazılarda altın yaldızlı mozaikler ve 40'tan fazla Hristiyan mezarı bulunmuştur. Apsis duvarı kısmen ayaktadır.",
+        "image": "assets/images/places/piskoposluk.jpg",
+        "image_alt": "Piskoposluk Kilisesi apsis duvarı kalıntısı",
+        "gallery": [
+          "assets/images/places/piskoposluk-1.jpg",
+          "assets/images/places/piskoposluk-2.jpg"
+        ],
+        "lat": 37.6485,
+        "lng": 32.3865,
+        "tips": "Sabah ışığında mozaik izleri zemin taşlarında parlıyor."
+      }
+    ]
+  },
+
+  "gallery": {
+    "page_title": "Galeri",
+    "page_subtitle": "Kilistra'dan Kareler",
+    "hero_image": "assets/images/galeri-hero.jpg",
+    "hero_image_alt": "Kilistra hava fotoğrafı",
+    "categories": ["Tümü", "Mimari", "Doğa", "Arkeoloji", "Köy Yaşamı"],
+    "items": [
+      {
+        "id": "g1",
+        "src": "assets/images/gallery/g1.jpg",
+        "thumb": "assets/images/gallery/thumbs/g1.jpg",
+        "alt": "Kilistra kaya kiliseleri panoramik görünüm",
+        "caption": "Kilistra'nın kaya kiliselerinden panoramik bir görünüm",
+        "category": "Mimari"
+      },
+      {
+        "id": "g2",
+        "src": "assets/images/gallery/g2.jpg",
+        "thumb": "assets/images/gallery/thumbs/g2.jpg",
+        "alt": "Sandıkkaya Kilisesi haç planlı iç mekân",
+        "caption": "Sandıkkaya Kilisesi'nin eşsiz haç planlı iç mekânı",
+        "category": "Mimari"
+      },
+      {
+        "id": "g3",
+        "src": "assets/images/gallery/g3.jpg",
+        "thumb": "assets/images/gallery/thumbs/g3.jpg",
+        "alt": "Kilistra vadisi gün batımı",
+        "caption": "Kilistra vadisinde büyüleyici bir gün batımı",
+        "category": "Doğa"
+      },
+      {
+        "id": "g4",
+        "src": "assets/images/gallery/g4.jpg",
+        "thumb": "assets/images/gallery/thumbs/g4.jpg",
+        "alt": "Kaya oyuğu manastır hücreleri",
+        "caption": "Bizans rahiplerine ait kaya oyuğu manastır hücreleri",
+        "category": "Mimari"
+      },
+      {
+        "id": "g5",
+        "src": "assets/images/gallery/g5.jpg",
+        "thumb": "assets/images/gallery/thumbs/g5.jpg",
+        "alt": "Via Sebaste antik yol taş döşemeleri",
+        "caption": "2000 yıllık Roma yolu Via Sebaste'nin taş döşemeleri",
+        "category": "Arkeoloji"
+      },
+      {
+        "id": "g6",
+        "src": "assets/images/gallery/g6.jpg",
+        "thumb": "assets/images/gallery/thumbs/g6.jpg",
+        "alt": "Gökyurt Köyü genel görünüm",
+        "caption": "Antik kentin üzerinde kurulu Gökyurt Köyü",
+        "category": "Köy Yaşamı"
+      },
+      {
+        "id": "g7",
+        "src": "assets/images/gallery/g7.jpg",
+        "thumb": "assets/images/gallery/thumbs/g7.jpg",
+        "alt": "Kilistra tüf kayaları",
+        "caption": "Kilistra'nın karakteristik volkanik tüf kayaları",
+        "category": "Doğa"
+      },
+      {
+        "id": "g8",
+        "src": "assets/images/gallery/g8.jpg",
+        "thumb": "assets/images/gallery/thumbs/g8.jpg",
+        "alt": "Mozaik kalıntıları",
+        "caption": "Piskoposluk Kilisesi'nden altın yaldızlı mozaik kalıntıları",
+        "category": "Arkeoloji"
+      },
+      {
+        "id": "g9",
+        "src": "assets/images/gallery/g9.jpg",
+        "thumb": "assets/images/gallery/thumbs/g9.jpg",
+        "alt": "Sümbül Kilisesi çevresi ilkbahar",
+        "caption": "İlkbaharda sümbüllerin çevrelediği Sümbül Kilisesi",
+        "category": "Doğa"
+      },
+      {
+        "id": "g10",
+        "src": "assets/images/gallery/g10.jpg",
+        "thumb": "assets/images/gallery/thumbs/g10.jpg",
+        "alt": "Arkeoloji kazı çalışması",
+        "caption": "Kilistra'daki sistematik arkeoloji kazı çalışmaları",
+        "category": "Arkeoloji"
+      },
+      {
+        "id": "g11",
+        "src": "assets/images/gallery/g11.jpg",
+        "thumb": "assets/images/gallery/thumbs/g11.jpg",
+        "alt": "Gözetleme kulesi kalıntısı",
+        "caption": "Vadiye hâkim gözetleme kulesi kalıntısı",
+        "category": "Mimari"
+      },
+      {
+        "id": "g12",
+        "src": "assets/images/gallery/g12.jpg",
+        "thumb": "assets/images/gallery/thumbs/g12.jpg",
+        "alt": "Gökyurt köy evi ve antik yapılar",
+        "caption": "Geleneksel köy evleri ve antik yapılar iç içe",
+        "category": "Köy Yaşamı"
+      }
+    ]
+  },
+
+  "practical": {
+    "page_title": "Pratik Bilgiler",
+    "page_subtitle": "Ziyaretinizi Planlayin",
+    "hero_image": "assets/images/pratik-hero.jpg",
+    "hero_image_alt": "Kilistra'ya giden yol",
+
+    "visit_info": {
+      "title": "Ziyaret Bilgileri",
+      "hours": "Her gün açık (sabah 08:00 – akşam 19:00 önerilir)",
+      "entrance": "Ücretsiz giriş",
+      "duration": "2–4 saat (tam ziyaret için)",
+      "best_season": "İlkbahar (Nisan–Haziran) ve Sonbahar (Eylül–Kasım)",
+      "notes": "Rahat yürüyüş ayakkabısı gereklidir. Yollar kayalık ve eğimlidir. Su ve atıştırmalık getirmeniz önerilir."
+    },
+
+    "transportation": {
+      "title": "Ulaşım",
+      "from_konya": "Konya merkeze 45 km uzaklıkta",
+      "routes": [
+        {
+          "id": "ana-guzergah",
+          "title": "Ana Güzergâh",
+          "description": "Konya – Hatunsaray asfaltı (34 km) → Güneydoğuya dönüş → 15 km Gökyurt asfaltı",
+          "duration": "yaklaşık 50 dakika",
+          "icon": "route"
+        },
+        {
+          "id": "alternatif",
+          "title": "Alternatif Güzergâh",
+          "description": "Konya – Antalya yolunun 36. km'sinden Kayalı yol ayrımı → 9 km",
+          "duration": "yaklaşık 45 dakika",
+          "icon": "route"
+        }
+      ],
+      "public_transport": "Konya'dan Hatunsaray'a dolmuş mevcuttur; Gökyurt için ek araç gerekmektedir.",
+      "car_rental": "Konya merkezdeki araç kiralama firmaları önerilir. Taksi alternatiflere göre daha pahalıdır.",
+      "coordinates": { "lat": 37.6482, "lng": 32.3869 },
+      "google_maps": "https://maps.google.com/?q=37.6482,32.3869"
+    },
+
+    "accommodation": {
+      "title": "Konaklama",
+      "recommendation": "Konya merkezdeki otellerde konaklanıp günübirlik ziyaret önerilir.",
+      "local": "Köyde yerel misafirperver aileler gruplar için konaklama imkânı sunabilir.",
+      "items": [
+        {
+          "area": "Konya Merkez",
+          "note": "En geniş otel seçeneği; 45 km mesafe ile günübirlik uygundur.",
+          "image": "assets/images/pratik/konaklama-konya.jpg",
+          "image_alt": "Konya şehir merkezi"
+        },
+        {
+          "area": "Hatunsaray Beldesi",
+          "note": "Kilistra'ya 15 km; sınırlı pansiyon seçenekleri mevcut.",
+          "image": "assets/images/pratik/konaklama-hatunsaray.jpg",
+          "image_alt": "Hatunsaray beldesi"
+        }
+      ]
+    },
+
+    "tips": {
+      "title": "Ziyaretçi İpuçları",
+      "items": [
+        {
+          "icon": "sun",
+          "title": "En İyi Işık",
+          "text": "Fotoğraf için sabah 07:00–10:00 veya öğleden sonra 16:00–19:00 saatlerini tercih edin."
+        },
+        {
+          "icon": "shoe",
+          "title": "Uygun Kıyafet",
+          "text": "Kayalık arazide yürüyüş botu veya sağlam spor ayakkabı şart. Kaya oyuklarına girerken eğilmek gerekebilir."
+        },
+        {
+          "icon": "droplets",
+          "title": "Su ve Yiyecek",
+          "text": "Köyde sınırlı imkân vardır. En az 1.5 lt su ve atıştırmalık getirin. Köy kahvesi de bulunabilir."
+        },
+        {
+          "icon": "calendar",
+          "title": "En İyi Mevsim",
+          "text": "İlkbaharda doğa yeşillenir, Sümbül Kilisesi'nin çevresi sümbüllerle kaplanır. Yazın erken saatleri tercih edin."
+        },
+        {
+          "icon": "smartphone",
+          "title": "Çekim Kapasitesi",
+          "text": "Kamera ve telefon şarjlı olsun. İç mekânlarda ek ışık kaynağı (el feneri) işe yarar."
+        },
+        {
+          "icon": "info",
+          "title": "Rehber",
+          "text": "Konya Kültür ve Turizm Müdürlüğü aracılığıyla yerel rehber hizmeti talep edilebilir."
+        }
+      ]
+    }
+  },
+
+  "contact": {
+    "page_title": "İletişim",
+    "page_subtitle": "Sorularınız İçin Bize Ulaşın",
+    "hero_image": "assets/images/iletisim-hero.jpg",
+    "hero_image_alt": "Kilistra antik kenti genel görünüm",
+    "address": "Gökyurt Köyü, Hatunsaray Beldesi, Meram, Konya",
+    "phone": "",
+    "email": "",
+    "map": {
+      "lat": 37.6482,
+      "lng": 32.3869,
+      "zoom": 13
+    },
+    "authority": {
+      "name": "Konya Kültür ve Turizm İl Müdürlüğü",
+      "phone": "+90 332 351 00 74",
+      "website": "https://www.kultur.gov.tr"
+    }
+  },
+
+  "footer": {
+    "tagline": "Kilistra — Tarihin Kalbine Yolculuk",
+    "description": "Gökyurt Köyü'nün kalbindeki Kilistra Antik Kenti; Anadolu uygarlığının binlerce yıllık tanığıdır.",
+    "links": [
+      { "label": "Ana Sayfa", "href": "index.html" },
+      { "label": "Tarih", "href": "tarih.html" },
+      { "label": "Keşfet", "href": "kesfet.html" },
+      { "label": "Galeri", "href": "galeri.html" },
+      { "label": "Pratik Bilgiler", "href": "pratik.html" },
+      { "label": "İletişim", "href": "iletisim.html" }
+    ],
+    "copyright": "© 2024 Kilistra Sanal Rehber. Tüm hakları saklıdır.",
+    "credits": "Kilistra Antik Kenti, T.C. Kültür ve Turizm Bakanlığı'nın koruma altındadır."
+  }
+}

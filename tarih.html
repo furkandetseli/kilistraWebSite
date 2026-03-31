@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kilistra Antik Kenti'nin tarihi: Tunç Çağı'ndan Roma, Erken Hristiyanlık ve Bizans dönemlerine uzanan tarih yolculuğu.">
+  <title>Tarih & Arkeoloji — Kilistra</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&family=Cinzel+Decorative:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<div id="page-loader">
+  <span class="loader-logo">Kilistra</span>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<div id="navbar-placeholder"></div>
+
+<!-- ═══════════════════════════════════════════
+     PAGE HERO
+════════════════════════════════════════════ -->
+<section class="page-hero" id="page-hero">
+  <div class="page-hero-bg" id="hero-bg">
+    <div style="width:100%;height:100%;background:radial-gradient(ellipse at 40% 60%, rgba(139,94,60,0.35) 0%, rgba(201,168,76,0.08) 40%, var(--clr-bg) 75%);"></div>
+  </div>
+  <div class="container page-hero-content">
+    <div class="breadcrumb">
+      <a href="index.html">Ana Sayfa</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>Tarih & Arkeoloji</span>
+    </div>
+    <span class="page-hero-label">Kilistra'nın Geçmişi</span>
+    <h1 id="hero-title">Tarih & Arkeoloji</h1>
+    <p id="hero-subtitle"></p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     INTRO
+════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div style="max-width:72ch;margin-inline:auto;text-align:center;" data-aos="fade-up">
+      <span class="section-label">Katmanlar</span>
+      <h2 style="margin-bottom:var(--sp-lg);" id="history-intro-title">2300 Yıllık Kesintisiz Tarih</h2>
+      <div class="gold-divider"><span class="gold-divider-icon">✦</span></div>
+      <p id="history-intro-text" style="font-size:1.05rem;color:var(--clr-text-muted);margin-inline:auto;margin-top:var(--sp-lg);"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     TIMELINE
+════════════════════════════════════════════ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-label">Zaman Çizelgesi</span>
+      <h2>Dönemden Döneme</h2>
+    </div>
+    <div class="timeline" id="timeline"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     AZIZ PAVLUS
+════════════════════════════════════════════ -->
+<section class="section paul-section" id="paul-section">
+  <div class="container">
+    <div class="paul-grid">
+      <div data-aos="fade-right">
+        <span class="section-label" id="paul-label">İnanç Turizmi</span>
+        <h2 id="paul-title"></h2>
+        <div class="gold-divider" style="justify-content:flex-start;margin-block:var(--sp-lg);">
+          <span class="gold-divider-icon">✦</span>
+          <div style="flex:0;width:60px;height:1px;background:var(--clr-gold);"></div>
+        </div>
+        <blockquote class="paul-quote">
+          "MS 49-56 yılları arasında Aziz Pavlus ve Barnabas, birinci misyoner yolculuklarında Lystra/Kilistra'yı ziyaret etmiş ve Hristiyanlığı yaymıştır."
+          <cite style="display:block;margin-top:var(--sp-sm);font-size:0.8rem;font-style:normal;color:var(--clr-text-dim);">— Elçilerin İşleri 14:6-21</cite>
+        </blockquote>
+        <p id="paul-text" style="color:var(--clr-text-muted);font-size:0.95rem;line-height:1.8;"></p>
+      </div>
+      <div class="paul-image img-placeholder" data-aos="fade-left" data-aos-delay="150" id="paul-img-wrap">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     ARKEOLOJIK BULGULAR
+════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-label">Arkeoloji</span>
+      <h2 id="findings-title">Arkeolojik Bulgular</h2>
+    </div>
+    <div class="findings-grid" id="findings-grid"></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section-dark" style="text-align:center;" data-aos="fade-up">
+  <div class="container">
+    <span class="section-label">Sonraki Adım</span>
+    <h2 style="margin-bottom:var(--sp-md);">Mekanları Keşfedin</h2>
+    <p style="color:var(--clr-text-muted);margin-inline:auto;margin-bottom:var(--sp-2xl);max-width:45ch;">Tarihi öğrendikten sonra Kilistra'nın etkileyici yapılarını yakından inceleyin.</p>
+    <a href="kesfet.html" class="btn btn-primary">
+      Keşfet
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+  </div>
+</section>
+
+<button id="scroll-top" aria-label="Yukarı çık">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<div id="footer-placeholder"></div>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="js/main.js"></script>
+<script>
+async function pageInit(data) {
+  const U = window.KilistraUtils;
+  const h = data.history;
+
+  // Hero bg
+  const heroBg = document.getElementById('hero-bg');
+  if (h.hero_image) {
+    heroBg.innerHTML = `<img data-src="${h.hero_image}" src="${U.placeholderSVG(h.hero_image_alt)}" alt="${h.hero_image_alt}" style="width:100%;height:100%;object-fit:cover;">`;
+  }
+  document.getElementById('hero-title').textContent    = h.page_title;
+  document.getElementById('hero-subtitle').textContent = h.page_subtitle;
+
+  // Intro
+  document.getElementById('history-intro-text').textContent = h.intro;
+
+  // Timeline
+  const timeline = document.getElementById('timeline');
+  timeline.innerHTML = h.timeline.map((item, i) => `
+    <div class="timeline-item" data-aos="${i % 2 === 0 ? 'fade-right' : 'fade-left'}">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <p class="timeline-period">${item.period}</p>
+        <p class="timeline-years">${item.years}</p>
+        <h3>${item.title}</h3>
+        <p>${item.text}</p>
+      </div>
+      <div class="timeline-image img-placeholder">
+        <img data-src="${item.image}" src="${U.placeholderSVG(item.image_alt)}" alt="${item.image_alt}" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+    </div>
+  `).join('');
+
+  // Paul section
+  document.getElementById('paul-title').textContent = h.paul_section.title;
+  document.getElementById('paul-text').textContent  = h.paul_section.text;
+
+  const paulWrap = document.getElementById('paul-img-wrap');
+  paulWrap.innerHTML = `<img data-src="${h.paul_section.image}" src="${U.placeholderSVG(h.paul_section.image_alt)}" alt="${h.paul_section.image_alt}" style="width:100%;height:100%;object-fit:cover;">`;
+
+  // Findings
+  document.getElementById('findings-title').textContent = h.findings.title;
+  document.getElementById('findings-grid').innerHTML = h.findings.items.map((f, i) => `
+    <div class="finding-card" data-aos="fade-up" data-aos-delay="${i * 100}">
+      <div class="finding-card-image img-placeholder">
+        <img data-src="${f.image}" src="${U.placeholderSVG(f.image_alt)}" alt="${f.image_alt}">
+      </div>
+      <div class="finding-card-body">
+        <h4>${f.title}</h4>
+        <p>${f.text}</p>
+      </div>
+    </div>
+  `).join('');
+
+  if (typeof AOS !== 'undefined') AOS.refresh();
+}
+</script>
+</body>
+</html>

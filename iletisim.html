@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kilistra sanal rehberi iletişim sayfası. Soru, öneri ve görüşleriniz için bize ulaşın.">
+  <title>İletişim — Kilistra</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&family=Cinzel+Decorative:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<div id="page-loader">
+  <span class="loader-logo">Kilistra</span>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<div id="navbar-placeholder"></div>
+
+<!-- ═══════════════════════════════════════════
+     PAGE HERO
+════════════════════════════════════════════ -->
+<section class="page-hero" id="page-hero">
+  <div class="page-hero-bg" id="hero-bg">
+    <div style="width:100%;height:100%;background:radial-gradient(ellipse at 30% 60%, rgba(201,168,76,0.12) 0%, var(--clr-bg) 60%);"></div>
+  </div>
+  <div class="container page-hero-content">
+    <div class="breadcrumb">
+      <a href="index.html">Ana Sayfa</a>
+      <span class="breadcrumb-sep">›</span>
+      <span>İletişim</span>
+    </div>
+    <span class="page-hero-label">Bize Ulaşın</span>
+    <h1 id="hero-title">İletişim</h1>
+    <p id="hero-subtitle"></p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CONTACT LAYOUT
+════════════════════════════════════════════ -->
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- Form -->
+      <div data-aos="fade-right">
+        <div class="contact-form-card">
+          <h2>Mesaj Gönderin</h2>
+          <p>Kilistra hakkında soru, öneri veya deneyimlerinizi bizimle paylaşın.</p>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Adınız</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Adınız Soyadınız"
+                  autocomplete="name"
+                  required
+                >
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">E-posta</label>
+                <input
+                  class="form-input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="ornek@email.com"
+                  autocomplete="email"
+                  required
+                >
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="subject">Konu</label>
+              <input
+                class="form-input"
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Mesajınızın konusu"
+              >
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Mesajınız</label>
+              <textarea
+                class="form-textarea"
+                id="message"
+                name="message"
+                placeholder="Mesajınızı buraya yazın…"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="align-self:flex-start;" id="submit-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Gönder
+            </button>
+
+            <div id="form-success" style="display:none;padding:var(--sp-md);background:rgba(106,184,106,0.1);border:1px solid rgba(106,184,106,0.3);border-radius:var(--radius-md);color:#6ab870;font-size:0.9rem;">
+              Mesajınız gönderildi. En kısa sürede yanıt vereceğiz.
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Contact info -->
+      <div data-aos="fade-left" data-aos-delay="150">
+        <div class="contact-info-block">
+
+          <div>
+            <span class="section-label">Konum</span>
+            <h3 style="margin-bottom:var(--sp-xl);">Kilistra Antik Kenti</h3>
+
+            <div class="contact-detail" style="margin-bottom:var(--sp-lg);">
+              <div class="contact-detail-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h4>Adres</h4>
+                <p id="contact-address"></p>
+              </div>
+            </div>
+
+            <div class="contact-detail" style="margin-bottom:var(--sp-lg);" id="authority-block">
+              <div class="contact-detail-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <div>
+                <h4>Resmi Kurum</h4>
+                <p id="authority-name"></p>
+                <a id="authority-phone" href="#" style="font-size:0.9rem;color:var(--clr-gold);display:block;margin-top:4px;"></a>
+                <a id="authority-website" href="#" target="_blank" rel="noopener" style="font-size:0.88rem;color:var(--clr-gold-dark);display:block;margin-top:2px;"></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mini map -->
+          <div>
+            <p style="font-family:var(--font-heading);font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--clr-gold);margin-bottom:var(--sp-sm);">Harita</p>
+            <div id="contact-map" class="contact-map"></div>
+            <a
+              href="https://maps.google.com/?q=37.6482,32.3869"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-ghost"
+              style="margin-top:var(--sp-md);font-size:0.75rem;width:100%;justify-content:center;"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Büyük Haritada Aç
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<button id="scroll-top" aria-label="Yukarı çık">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<div id="footer-placeholder"></div>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/main.js"></script>
+<script src="js/map.js"></script>
+<script>
+async function pageInit(data) {
+  const U = window.KilistraUtils;
+  const c = data.contact;
+
+  // Hero
+  const heroBg = document.getElementById('hero-bg');
+  if (c.hero_image) {
+    heroBg.innerHTML = `<img data-src="${c.hero_image}" src="${U.placeholderSVG(c.hero_image_alt)}" alt="${c.hero_image_alt}" style="width:100%;height:100%;object-fit:cover;">`;
+  }
+  document.getElementById('hero-title').textContent    = c.page_title;
+  document.getElementById('hero-subtitle').textContent = c.page_subtitle;
+
+  // Contact details
+  document.getElementById('contact-address').textContent = c.address;
+  document.getElementById('authority-name').textContent  = c.authority.name;
+
+  const authPhone = document.getElementById('authority-phone');
+  authPhone.textContent = c.authority.phone;
+  authPhone.href        = `tel:${c.authority.phone.replace(/\s/g, '')}`;
+
+  const authWeb = document.getElementById('authority-website');
+  authWeb.textContent = c.authority.website;
+  authWeb.href        = c.authority.website;
+
+  // Map
+  setTimeout(() => {
+    if (window.KilistraMap) {
+      window.KilistraMap.initContactMap(c.map.lat, c.map.lng, c.map.zoom);
+    }
+  }, 100);
+
+  // Form submit
+  document.getElementById('contact-form').addEventListener('submit', e => {
+    e.preventDefault();
+    const btn = document.getElementById('submit-btn');
+    btn.disabled = true;
+    btn.textContent = 'Gönderiliyor…';
+
+    // Simulate send (no backend)
+    setTimeout(() => {
+      document.getElementById('form-success').style.display = 'block';
+      btn.style.display = 'none';
+      e.target.reset();
+    }, 1000);
+  });
+
+  if (typeof AOS !== 'undefined') AOS.refresh();
+}
+</script>
+</body>
+</html>

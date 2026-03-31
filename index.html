@@ -1,372 +1,258 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kilistra Antik Kenti - Yapım Aşamasında</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-        }
-        
-        .background-wrapper {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-            background-color: #000;
-        }
-        
-        .background-wrapper img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-        }
-        
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7);
-            z-index: -1;
-        }
-        
-        body {
-            color: #fff;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .container {
-            max-width: 800px;
-            padding: 40px;
-            background-color: rgba(0, 0, 0, 0.6);
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-            text-align: center;
-            margin: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            z-index: 1;
-        }
-        
-        .logo {
-            margin-bottom: 30px;
-        }
-        
-        .logo img {
-            max-width: 150px;
-            height: auto;
-        }
-        
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            color: #e9c46a;
-            letter-spacing: 1px;
-        }
-        
-        .tagline {
-            font-size: 18px;
-            margin-bottom: 30px;
-            color: #e9c46a;
-            font-style: italic;
-        }
-        
-        .construction-icon {
-            font-size: 50px;
-            margin-bottom: 30px;
-            color: #e76f51;
-        }
-        
-        .message {
-            margin-bottom: 30px;
-            line-height: 1.6;
-        }
-        
-        .countdown {
-            margin: 30px 0;
-            font-size: 18px;
-            color: #e9c46a;
-        }
-        
-        .countdown span {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        
-        .social-links {
-            margin: 30px 0;
-        }
-        
-        .social-links a {
-            display: inline-block;
-            margin: 0 10px;
-            color: #fff;
-            font-size: 24px;
-            transition: transform 0.3s, color 0.3s;
-            text-decoration: none;
-        }
-        
-        .social-links a:hover {
-            transform: translateY(-5px);
-            color: #e9c46a;
-        }
-        
-        .contact {
-            margin-top: 30px;
-            font-size: 14px;
-            color: #ccc;
-        }
-        
-        .contact a {
-            color: #e9c46a;
-            text-decoration: none;
-        }
-        
-        .contact a:hover {
-            text-decoration: underline;
-        }
-        
-        .progress-container {
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            margin: 30px 0;
-            overflow: hidden;
-        }
-        
-        .progress-bar {
-            height: 10px;
-            width: 35%;
-            background: linear-gradient(to right, #e9c46a, #e76f51);
-            border-radius: 10px;
-            animation: pulse 2s infinite;
-        }
-        
-        @keyframes pulse {
-            0% {
-                opacity: 0.6;
-            }
-            50% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0.6;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 28px;
-            }
-            
-            .tagline {
-                font-size: 16px;
-            }
-            
-            .container {
-                padding: 25px;
-                margin: 15px;
-                max-width: 95%;
-            }
-            
-            .construction-icon {
-                font-size: 40px;
-                margin-bottom: 20px;
-            }
-            
-            .message {
-                font-size: 14px;
-            }
-            
-            .countdown {
-                font-size: 16px;
-                margin: 20px 0;
-            }
-            
-            .countdown span {
-                font-size: 20px;
-            }
-            
-            .social-links a {
-                font-size: 20px;
-                margin: 0 8px;
-            }
-            
-            .contact {
-                font-size: 12px;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 24px;
-            }
-            
-            .tagline {
-                font-size: 14px;
-            }
-            
-            .container {
-                padding: 20px;
-                margin: 10px;
-            }
-            
-            .construction-icon {
-                font-size: 36px;
-                margin-bottom: 15px;
-            }
-            
-            .message {
-                font-size: 13px;
-                line-height: 1.4;
-            }
-            
-            .progress-container {
-                margin: 20px 0;
-            }
-            
-            .countdown {
-                font-size: 14px;
-            }
-            
-            .countdown span {
-                font-size: 18px;
-            }
-        }
-        
-        /* Yüksek çözünürlüklü ekranlar için */
-        @media (min-width: 1200px) {
-            .container {
-                max-width: 900px;
-            }
-            
-            h1 {
-                font-size: 42px;
-            }
-            
-            .tagline {
-                font-size: 20px;
-            }
-        }
-        
-        /* Dikey telefon ekranları için arka plan düzeltmesi */
-        @media (max-width: 768px) and (orientation: portrait) {
-            .background-wrapper img {
-                object-fit: cover;
-                width: 100%;
-                height: 100%;
-            }
-        }
-        
-        /* Yatay telefon ekranları için */
-        @media (max-height: 500px) {
-            .container {
-                padding: 15px;
-            }
-            
-            .construction-icon {
-                font-size: 30px;
-                margin-bottom: 10px;
-            }
-            
-            h1 {
-                margin-bottom: 10px;
-            }
-            
-            .tagline {
-                margin-bottom: 15px;
-            }
-            
-            .message {
-                margin-bottom: 15px;
-            }
-            
-            .progress-container {
-                margin: 15px 0;
-            }
-            
-            .countdown {
-                margin: 15px 0;
-            }
-            
-            .social-links {
-                margin: 15px 0;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Konya Meram'daki Kilistra Antik Kenti ve Gökyurt Köyü'nün sanal rehberi. Kaya kiliseleri, Roma tarihi ve Aziz Pavlus'un izleri.">
+  <meta property="og:title" content="Kilistra — Gökyurt Köyü Sanal Rehberi">
+  <meta property="og:description" content="2000 yıllık tarihin izinde, Anadolu'nun gizli hazinesi Kilistra'yı keşfedin.">
+  <meta property="og:type" content="website">
+  <title>Kilistra — Gökyurt Köyü Sanal Rehberi</title>
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&family=Cinzel+Decorative:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
 </head>
 <body>
-    <div class="background-wrapper">
-        <img src="arkaplan.jpeg" alt="Kilistra Antik Kenti">
+
+<!-- Page Loader -->
+<div id="page-loader">
+  <span class="loader-logo">Kilistra</span>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+</div>
+
+<!-- Navbar injected by JS -->
+<div id="navbar-placeholder"></div>
+
+<!-- ═══════════════════════════════════════════
+     HERO
+════════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="hero-bg-placeholder" id="hero-bg-img"></div>
+  </div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow" id="hero-eyebrow">Gökyurt Köyü · Meram · Konya</p>
+    <h1 class="hero-title display-title" id="hero-title">Kilistra</h1>
+    <p class="hero-subtitle" id="hero-subtitle"></p>
+    <p class="hero-desc" id="hero-desc"></p>
+    <div class="hero-actions" id="hero-actions"></div>
+  </div>
+
+  <div class="hero-scroll">
+    <span>Keşfet</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     NAVIGATE CARDS
+════════════════════════════════════════════ -->
+<section class="section section-dark" id="nav-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-label">Ne Arıyorsunuz?</span>
+      <h2>Kilistra'yı Keşfedin</h2>
     </div>
-    <div class="overlay"></div>
-    
-    <div class="container">
-        <div class="logo">
-            <!-- Logo buraya eklenebilir -->
-            <div class="construction-icon">🏛️ 🚧</div>
+    <div class="nav-cards-grid" id="nav-cards"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     INTRO
+════════════════════════════════════════════ -->
+<section class="section" id="intro-section">
+  <div class="container">
+    <div class="intro-grid">
+      <div class="intro-image" data-aos="fade-right">
+        <div class="intro-image-main img-placeholder" id="intro-img-wrap">
+          <!-- image injected by JS -->
         </div>
-        
-        <h1>KİLİSTRA ANTİK KENTİ</h1>
-        <div class="tagline">Tarihin İzinde Yeni Bir Yolculuk</div>
-        
-        <div class="message">
-            <p>Web sitemiz şu anda yapım aşamasındadır. Kilistra Antik Kenti'nin zengin tarihini ve kültürel mirasını en iyi şekilde yansıtmak için çalışıyoruz.</p>
-            <p>Çok yakında sizlerle buluşacağız!</p>
-        </div>
-        
-        <div class="progress-container">
-            <div class="progress-bar"></div>
-        </div>
-        
-        <div class="countdown">
-            Tahmini Açılış: <span>Haziran 2025</span>
-        </div>
-        
-        <div class="social-links">
-            <!-- Sosyal medya ikonları -->
-            <a href="https://www.instagram.com/kilistraantikkent/" title="Instagram">📸</a>
-            <a href="#" title="Twitter">🐦</a>
-            <a href="#" title="Facebook">👍</a>
-            <a href="#" title="YouTube">📹</a>
-        </div>
-        
-        <div class="contact">
-            <p>Sorularınız için: <a href="mailto:kilistraantikkent@hotmail.com">kilistraantikkent@hotmail.com</a></p>
-            <p>&copy; 2025 Kilistra Antik Kenti. Tüm hakları saklıdır.</p>
-        </div>
+      </div>
+      <div data-aos="fade-left" data-aos-delay="150">
+        <span class="intro-label">Kilistra Nedir?</span>
+        <h2 id="intro-title"></h2>
+        <div class="gold-divider"><span class="gold-divider-icon">✦</span></div>
+        <p class="intro-text" id="intro-text"></p>
+        <a href="tarih.html" class="btn btn-primary">
+          Tarihi Keşfet
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <div class="intro-highlights" id="intro-highlights"></div>
+      </div>
     </div>
-    
-    <script>
-        // Sayfa yüklendiğinde tarih bilgisini güncelle
-        document.addEventListener('DOMContentLoaded', function() {
-            const now = new Date();
-            const year = now.getFullYear();
-            document.querySelector('.contact p:last-child').innerHTML = 
-                `&copy; ${year} Kilistra Antik Kenti. Tüm hakları saklıdır.`;
-        });
-    </script>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     STATS BAND
+════════════════════════════════════════════ -->
+<div class="stats-band">
+  <div class="container">
+    <div class="stats-grid" id="stats-grid"></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     FEATURED PLACES
+════════════════════════════════════════════ -->
+<section class="section section-alt" id="places-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-label" id="places-label"></span>
+      <h2 id="places-title"></h2>
+      <p id="places-subtitle"></p>
+    </div>
+    <div class="places-carousel" id="places-grid"></div>
+    <div style="text-align:center;margin-top:var(--sp-2xl)" data-aos="fade-up">
+      <a href="kesfet.html" class="btn btn-outline">
+        Tüm Mekanları Gör
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     SCROLL TO TOP
+════════════════════════════════════════════ -->
+<button id="scroll-top" aria-label="Yukarı çık">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<!-- Footer injected by JS -->
+<div id="footer-placeholder"></div>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="js/main.js"></script>
+<script>
+async function pageInit(data) {
+  const U = window.KilistraUtils;
+
+  // Hero
+  const heroBg = document.getElementById('hero-bg-img');
+  if (data.hero.image) {
+    heroBg.style.backgroundImage = `url('${data.hero.image}')`;
+    heroBg.style.backgroundSize = 'cover';
+    heroBg.style.backgroundPosition = 'center';
+  }
+  document.getElementById('hero-subtitle').textContent = data.hero.subtitle;
+  document.getElementById('hero-desc').textContent    = data.hero.description;
+
+  const actions = document.getElementById('hero-actions');
+  actions.innerHTML = `
+    <a href="${data.hero.cta_primary.href}" class="btn btn-primary">
+      ${data.hero.cta_primary.label}
+      ${U.svgIcon('arrow-right', 16)}
+    </a>
+    <a href="${data.hero.cta_secondary.href}" class="btn btn-outline">
+      ${data.hero.cta_secondary.label}
+    </a>
+  `;
+
+  // Nav cards
+  const navDefs = [
+    {
+      label: 'Tarih & Arkeoloji',
+      desc:  'Roma ve Bizans katmanlarını keşfedin',
+      href:  'tarih.html',
+      icon:  'layers',
+      imgKey: 'tarih-hero.jpg',
+    },
+    {
+      label: 'Mekanları Keşfet',
+      desc:  'Kaya kiliseleri, sarnıçlar ve antik yollar',
+      href:  'kesfet.html',
+      icon:  'map-pin',
+      imgKey: 'kesfet-hero.jpg',
+    },
+    {
+      label: 'Galeri',
+      desc:  'Kilistra\'dan muhteşem kareler',
+      href:  'galeri.html',
+      icon:  'star',
+      imgKey: 'galeri-hero.jpg',
+    },
+  ];
+
+  document.getElementById('nav-cards').innerHTML = navDefs.map(c => `
+    <a href="${c.href}" class="nav-card" data-aos="fade-up" data-aos-delay="${navDefs.indexOf(c) * 100}">
+      <div class="nav-card-bg">
+        <img data-src="assets/images/${c.imgKey}" src="${U.placeholderSVG(c.label)}" alt="${c.label}" loading="lazy">
+      </div>
+      <div class="nav-card-content">
+        <div class="nav-card-icon">${U.svgIcon(c.icon, 24)}</div>
+        <h3>${c.label}</h3>
+        <p>${c.desc}</p>
+        <div class="nav-card-arrow">${U.svgIcon('arrow-right', 16)}</div>
+      </div>
+    </a>
+  `).join('');
+
+  // Intro
+  document.getElementById('intro-title').textContent = data.intro.title;
+  document.getElementById('intro-text').textContent  = data.intro.text;
+
+  const introImgWrap = document.getElementById('intro-img-wrap');
+  introImgWrap.innerHTML = `<img data-src="${data.intro.image}" src="${U.placeholderSVG(data.intro.image_alt)}" alt="${data.intro.image_alt}" style="width:100%;height:100%;object-fit:cover;">`;
+
+  // Highlights
+  const iconMap = { calendar: 'calendar', church: 'church', 'map-pin': 'map-pin', layers: 'layers' };
+  document.getElementById('intro-highlights').innerHTML = data.intro.highlights.map(h => `
+    <div class="highlight-item" data-aos="fade-up">
+      <div class="highlight-icon">${U.svgIcon(iconMap[h.icon] || 'star', 18)}</div>
+      <div>
+        <div class="highlight-value">${h.value}</div>
+        <div class="highlight-label">${h.label}</div>
+      </div>
+    </div>
+  `).join('');
+
+  // Stats
+  document.getElementById('stats-grid').innerHTML = data.stats.map((s, i) => `
+    <div class="stat-item" data-aos="fade-up" data-aos-delay="${i * 80}">
+      <span class="stat-value" data-counter="${s.value}">${s.value}</span>
+      <span class="stat-label">${s.label}</span>
+    </div>
+  `).join('');
+
+  // Featured places label/title
+  document.getElementById('places-label').textContent    = data.featured_places.title;
+  document.getElementById('places-title').textContent    = data.featured_places.subtitle;
+
+  // Places grid
+  document.getElementById('places-grid').innerHTML = data.featured_places.items.map((p, i) => `
+    <div class="feature-card" data-aos="fade-up" data-aos-delay="${i * 80}">
+      <div class="feature-card-image">
+        <img data-src="${p.image}" src="${U.placeholderSVG(p.name)}" alt="${p.image_alt}" loading="lazy">
+      </div>
+      <div class="feature-card-body">
+        <h3>${p.name}</h3>
+        <p>${p.short_desc}</p>
+      </div>
+      <div class="feature-card-footer">
+        <a href="${p.href}" class="feature-card-link">
+          Detaylar ${U.svgIcon('arrow-right', 14)}
+        </a>
+      </div>
+    </div>
+  `).join('');
+
+  // Re-init AOS for dynamically added elements
+  if (typeof AOS !== 'undefined') AOS.refresh();
+}
+</script>
 </body>
-</html> 
+</html>
